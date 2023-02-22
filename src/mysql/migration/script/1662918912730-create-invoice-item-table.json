@@ -1,0 +1,4 @@
+    {
+        "up":"CREATE TABLE invoice_items(invoice_id VARCHAR(36) COMMENT 'Invoice is For User',product_id VARCHAR(36) COMMENT 'Product For Invoice',product_quantity INT(11) UNSIGNED NOT NULL DEFAULT 0 COMMENT 'Product Quantity',product_option JSON COMMENT 'Product Options') COMMENT 'invoice item details';",
+        "down":"DROP TABLE invoice_items;"
+    }

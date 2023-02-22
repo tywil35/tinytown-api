@@ -1,0 +1,4 @@
+    {
+        "up":"CREATE TABLE product_category(category_id VARCHAR(100) COMMENT 'Category ID',product_id VARCHAR(36) COMMENT 'Product ID') COMMENT 'product category';",
+        "down":"DROP TABLE product_category;"
+    }

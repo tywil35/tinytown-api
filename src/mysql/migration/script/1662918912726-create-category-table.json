@@ -1,0 +1,4 @@
+    {
+        "up":"CREATE TABLE categories(category_name VARCHAR(100) PRIMARY KEY COMMENT 'Category Name',active BOOLEAN NOT NULL DEFAULT 0 COMMENT 'Active',goa_member_only BOOLEAN NOT NULL DEFAULT 0 COMMENT 'GOA Members Only') COMMENT 'category details';",
+        "down":"DROP TABLE categories;"
+    }

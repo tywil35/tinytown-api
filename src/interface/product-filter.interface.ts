@@ -1,0 +1,1 @@
+export type ProductFilter = { goa?: boolean, product_code?: string, product_id?: string, product_name?: string, categories?: string[] };

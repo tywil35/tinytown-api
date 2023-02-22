@@ -1,0 +1,4 @@
+    {
+        "up":"CREATE TABLE deliveries(id VARCHAR(36) PRIMARY KEY COMMENT 'Primary Key', create_time DATETIME COMMENT 'Create Time', update_time DATETIME DEFAULT NULL COMMENT 'Update Time', delete_time DATETIME DEFAULT NULL COMMENT 'Date and Time record was deleted', touched_by VARCHAR(36) COMMENT 'User that touched the record last', delivery_number TINYINT(6) ZEROFILL NOT NULL  COMMENT 'Delivery Number', invoice_id VARCHAR(36) COMMENT 'Invoice ', address_line VARCHAR(255) COMMENT 'Address', delivery_note VARCHAR(255) COMMENT 'Delivery Note', delivery_status TINYINT UNSIGNED DEFAULT NULL COMMENT 'Invoice Status') COMMENT 'Delivery Details';",
+        "down":"DROP TABLE deliveries;"
+    }

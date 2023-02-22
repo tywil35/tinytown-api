@@ -1,0 +1,6 @@
+    {
+        "up":"CREATE TABLE invoices(id VARCHAR(36) PRIMARY KEY COMMENT 'Primary Key',invoice_number INT NOT NULL COMMENT 'Invoice Number', create_time DATETIME COMMENT 'Create Time',update_time DATETIME DEFAULT NULL COMMENT 'Update Time',delete_time DATETIME DEFAULT NULL COMMENT 'Date and Time record was deleted',touched_by VARCHAR(36) COMMENT 'User that touched the record last',user_id VARCHAR(36) COMMENT 'Invoice is For User ',total_amount DOUBLE NOT NULL DEFAULT 0.0 COMMENT 'Total Amount',invoice_status TINYINT UNSIGNED DEFAULT NULL COMMENT 'Invoice Status',delivery_address VARCHAR(255) COMMENT 'Delivery Note',delivery_note VARCHAR(255) COMMENT 'Delivery Note',currency VARCHAR(128) COMMENT 'Currency',  delivery_time DATETIME COMMENT 'Delivery Time') COMMENT 'invoice details';",
+        "down":"DROP TABLE invoices;"
+    }
+
+    
